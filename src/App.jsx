@@ -3,7 +3,7 @@ import { Navbar } from "./components/index.js";
 
 const App = () => {
 	return (
-		<div>
+		<div className=' h-screen mx-auto bg-white'>
 			<div>
 				<Navbar />
 			</div>

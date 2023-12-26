@@ -5,6 +5,7 @@ import GetRank from "./GetRank";
 import UpdateScore from "./UpdateScore";
 import DeleteRecord from "./DeleteRecord";
 import Home from "./Home";
+import InputForm from "./InputForm";
 
 export {
 	Navbar,
@@ -14,4 +15,5 @@ export {
 	UpdateScore,
 	DeleteRecord,
 	Home,
+	InputForm
 };
