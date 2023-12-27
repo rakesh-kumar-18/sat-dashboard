@@ -80,15 +80,11 @@ const Navbar = () => {
 							<ul className='space-y-10  w-full'>
 								{navItems.map(({ id, slug, name }) => {
 									return (
-										<li
-											onClick={handleClick}
-											key={id}
-											className='p-2 w-full bg-blue-300 cursor-pointer rounded-md font-bold text-center'
-										>
-											<Link className='w-full h-full' to={slug}>
+										<Link key={id} to={slug} onClick={handleClick}>
+											<li className='bg-blue-300 my-4 text-center p-3 shadow-sm rounded-md font-bold'>
 												{name}
-											</Link>
-										</li>
+											</li>
+										</Link>
 									);
 								})}
 							</ul>
