@@ -37,7 +37,7 @@ const GetRank = () => {
 
 	return (
 		<div className='flex flex-col justify-center items-center mt-10'>
-			<h2>Get Rank</h2>
+			<h2 className='text-2xl uppercase'>Get Rank</h2>
 
 			<div>
 				<div className='mb-2'>

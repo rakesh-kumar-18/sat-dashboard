@@ -27,7 +27,7 @@ const DeleteRecord = () => {
 
 	return (
 		<div className='flex flex-col space-y-4 mt-10 justify-center items-center '>
-			<h2>Delete Record</h2>
+			<h2 className='text-2xl uppercase'>Delete Record</h2>
 			<div>
 				{!userList ? (
 					<div>No data</div>

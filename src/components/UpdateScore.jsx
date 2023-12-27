@@ -50,7 +50,7 @@ const UpdateScore = () => {
 
 	return (
 		<div className='flex justify-center items-center flex-col mt-10'>
-			<h2>Update Score</h2>
+			<h2 className='text-2xl uppercase'>Update Score</h2>
 
 			<div className='mb-2'>
 				<input
