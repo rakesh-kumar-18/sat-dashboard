@@ -42,7 +42,7 @@ const GetRank = () => {
 											{item.data.name}
 										</TableCell>
 										<TableCell align='right'>
-											{item.data.satScore < 0.3 * 1600 ? (
+											{item.data.satScore < 30 ? (
 												<div className='text-red-500 font-bold'>Failed</div>
 											) : (
 												<div className='text-green-500 font-bold'>Passed</div>
