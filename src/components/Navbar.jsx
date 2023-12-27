@@ -85,7 +85,9 @@ const Navbar = () => {
 											key={id}
 											className='p-2 w-full bg-blue-300 cursor-pointer rounded-md font-bold text-center'
 										>
-											<Link to={slug}>{name}</Link>
+											<Link className='w-full h-full' to={slug}>
+												{name}
+											</Link>
 										</li>
 									);
 								})}
