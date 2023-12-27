@@ -6,6 +6,7 @@ import UpdateScore from "./UpdateScore";
 import DeleteRecord from "./DeleteRecord";
 import Home from "./Home";
 import InputForm from "./InputForm";
+import BasicTable from "./Table";
 
 export {
 	Navbar,
@@ -15,5 +16,6 @@ export {
 	UpdateScore,
 	DeleteRecord,
 	Home,
-	InputForm
+	InputForm,
+	BasicTable,
 };

@@ -29,6 +29,14 @@ const InputForm = () => {
 			console.log("no data");
 		} else {
 			setUserList([...userList, { data: formData }]);
+			setFormData({
+				name: "",
+				address: "",
+				city: "",
+				country: "",
+				pin: "",
+				satScore: "",
+			});
 		}
 	};
 
@@ -92,12 +100,10 @@ const InputForm = () => {
 					/>
 				</div>
 				<div className='flex flex-col space-y-2'>
-					<label htmlFor='pincode'>Pincode</label>
+					<label htmlFor='pin'>Pincode</label>
 					<input
 						type='number'
-						minLength='6'
-						maxLength='6'
-						name='pincode'
+						name='pin'
 						required
 						id='pincode'
 						className='rounded-md'

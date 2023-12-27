@@ -1,9 +1,15 @@
+import { BasicTable } from "./index";
+
 const ViewAllData = () => {
 	return (
-		<div>
-			view all data
+		<div className='flex flex-col justify-center items-center mt-10'>
+			<h2>All Users</h2>
+
+			<div>
+				<BasicTable />
+			</div>
 		</div>
-	)
+	);
 };
 
 export default ViewAllData;

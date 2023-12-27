@@ -44,7 +44,7 @@ const Navbar = () => {
 		<>
 			<nav id='nav' className='flex w-full justify-between p-4 bg-blue-300 '>
 				<div>
-					<p className="cursor-pointer font-bold">
+					<p className='cursor-pointer font-bold'>
 						<Link to='/'>SAT Dashboard</Link>
 					</p>
 				</div>
@@ -75,15 +75,15 @@ const Navbar = () => {
 					>
 						<div
 							onClick={(e) => e.stopPropagation()}
-							className='w-60 flex justify-center pt-10 h-full bg-blue-500 p-4'
+							className='w-60  flex justify-center pt-10 h-full bg-blue-500 p-4'
 						>
-							<ul className='space-y-10 w-full'>
+							<ul className='space-y-10  w-full'>
 								{navItems.map(({ id, slug, name }) => {
 									return (
 										<li
 											onClick={handleClick}
 											key={id}
-											className='p-2 w-full bg-blue-300 rounded-md font-bold text-center'
+											className='p-2 w-full bg-blue-300 cursor-pointer rounded-md font-bold text-center'
 										>
 											<Link to={slug}>{name}</Link>
 										</li>
