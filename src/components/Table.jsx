@@ -30,6 +30,7 @@ export default function BasicTable() {
 						<TableCell align='right'>Country</TableCell>
 						<TableCell align='right'>Pin</TableCell>
 						<TableCell align='right'>SatScore</TableCell>
+						<TableCell align='right'>Status</TableCell>
 					</TableRow>
 				</TableHead>
 				<TableBody>
@@ -46,6 +47,13 @@ export default function BasicTable() {
 							<TableCell align='right'>{item.data.country}</TableCell>
 							<TableCell align='right'>{item.data.pin}</TableCell>
 							<TableCell align='right'>{item.data.satScore}</TableCell>
+							<TableCell align='right'>
+								{item.data.satScore < 30 ? (
+									<div className='text-red-500 font-bold'>Failed</div>
+								) : (
+									<div className='text-green-500 font-bold'>Passed</div>
+								)}
+							</TableCell>
 						</TableRow>
 					))}
 				</TableBody>
